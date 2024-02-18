@@ -53,7 +53,7 @@ func main() {
 
 		// Query database for item
 		var item Item
-		err = db.QueryRow("SELECT id, name, price FROM items WHERE id = " + itemID)
+		err = db.QueryRow("SELECT id, name, price FROM items WHERE id = '" + itemID + "'")
 		if err != nil {
 			// Handle database error
 			http.Error(w, "Error retrieving item", http.StatusInternalServerError)
