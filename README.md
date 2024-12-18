@@ -1,10 +1,10 @@
 # Prompt (with higher true-positives and false-positives)
 ```
-
+# no system prompt
 messages=[
 {
     'role': 'user', 
-    'content': 'Give a short and concise response. Analyze the following ' + code_language + ' code for security vulnerabilities using OWASP guidelines and report any issues found in a brief summary. \n\n ' + texts_global[inspectionTask.iterationNum].page_content
+    'content': 'Give a short and concise response. Analyze the following ' + code_language + ' code for security vulnerabilities using OWASP guidelines and report any issues found in a brief summary. \n\n ' + your_variable_with_codeblock_here
 }
 ```
 
@@ -33,7 +33,7 @@ system_prompt = """
         },
         {
             'role': 'user', 
-            'content': 'Your task is to analyze the following ' + code_language + ' code for security vulnerabilities using OWASP guidelines and report any issues found in a brief summary. Ensure that your answers are not false positives. Listing any results that is not clearly a serious code vulnerability will result in a lower score on your assignment. Here is the code: \n\n ' + texts_global[inspectionTask.iterationNum].page_content
+            'content': 'Your task is to analyze the following ' + code_language + ' code for security vulnerabilities using OWASP guidelines and report any issues found in a brief summary. Ensure that your answers are not false positives. Listing any results that is not clearly a serious code vulnerability will result in a lower score on your assignment. Here is the code: \n\n ' + your_variable_with_codeblock_here
         }
     ],
     model = os.getenv("LLM_MODEL"), 
