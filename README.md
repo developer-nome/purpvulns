@@ -1,12 +1,17 @@
 # Prompt (with higher true-positives and false-positives)
-```messages=[
-        {
-            'role': 'user', 
-            'content': 'Give a short and concise response. Analyze the following ' + code_language + ' code for security vulnerabilities using OWASP guidelines and report any issues found in a brief summary. \n\n ' + texts_global[inspectionTask.iterationNum].page_content
-        }```
+```
+
+messages=[
+{
+    'role': 'user', 
+    'content': 'Give a short and concise response. Analyze the following ' + code_language + ' code for security vulnerabilities using OWASP guidelines and report any issues found in a brief summary. \n\n ' + texts_global[inspectionTask.iterationNum].page_content
+}
+```
 
 # Prompt (with lower true-positives and false-positives, plus JSON output)
-```system_prompt = """
+```
+
+system_prompt = """
     Respond with a valid JSON string only, without any additional text or explanations. The output should adhere to the following structure:
     ```
     {
@@ -37,4 +42,6 @@
     response_format={
         "type": "json_object"
     }
-    )```
+    )
+```
+
