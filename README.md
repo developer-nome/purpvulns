@@ -51,6 +51,7 @@ system_prompt = """
 | Phi-3.5 (3.8B-Mini-Instruct-Q6_K)  | 96% |
 | GPT 4o Mini | 94% |
 | GLM 4 (9B-Chat-Q5_0  | 94% |
+| SuperNova-Medius (Q4_K_M) | 94% |
 | Llama 3.1 (70B) | 92% |
 | Wizard LM2 (7B-Q6_K) | 92% |
 | Claud 3 Haiku | 90% |
