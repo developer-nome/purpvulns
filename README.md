@@ -50,13 +50,15 @@ system_prompt = """
 | -------- | ------- |
 | Phi-3.5 (3.8B-Mini-Instruct-Q6_K)  | 96% |
 | GPT 4o Mini | 94% |
-| GLM 4 (9B-Chat-Q5_0  | 94% |
+| GLM 4 (9B-Chat-Q5_0)  | 94% |
 | SuperNova-Medius (Q4_K_M) | 94% |
+| Phi-4 (Q4_K_M) | 92% |
 | Llama 3.1 (70B) | 92% |
 | Wizard LM2 (7B-Q6_K) | 92% |
 | Claud 3 Haiku | 90% |
 | Claude 3.5 Sonnet | 88% |
 | GPT 4o | 88% |
+| Tulu 3 (8B Q4_K_M) | 88% |
 | Llama 3.1 (405B) | 85% |
 | Mistral Nemo | 85% |
 | Llama 3.2 (3B-Instruct-Q6_K) | 83% |
@@ -65,5 +67,7 @@ system_prompt = """
 | Qwen 2.5 Coder (7B-Instruct-Q6_K) | 81% |
 | CodeGemma | 79% |
 | Llama 3.1 (8B-Instruct-Q6_K) | 79% |
-
+| OpenCoder (8B Q8_0) | 79% |
+| EXAONE 3.5 (Q8_0) | 75% |
+| Falcon3 (10B Q4_K_M) | 63% |
 
